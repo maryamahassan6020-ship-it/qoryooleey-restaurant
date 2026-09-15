@@ -1,0 +1,14 @@
+<!-- QR CODE -->
+<section class="qr-section">
+
+  <h2>Scan Our Menu</h2>
+
+  <p>Scan the QR Code to view Qoryooleey Restaurant Menu</p>
+
+  <a href="https://qoryooleey-restaurant.vercel.app/" target="_blank">
+    <img src="qr-menu.png" alt="Scan Qoryooleey Restaurant Menu">
+  </a>
+
+  <h3>Qoryooleey Restaurant</h3>
+
+</section>
