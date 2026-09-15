@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f3ed;
   color: #333;
+  overflow-x: hidden;
 }
 
 main {
@@ -16,14 +17,196 @@ main {
   margin: auto;
 }
 
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  position: relative;
+  min-height: 300px;
+  background: linear-gradient(135deg, #064d3b, #006b50);
+  border-bottom: 5px solid #e5a900;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 55px;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  z-index: 5;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  color: #f2b705;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content span {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+
+/* =========================================
+   HERO CORNERS
+========================================= */
+
+.hero-corner {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  z-index: 3;
+}
+
+.hero-left {
+  left: 0;
+  top: 0;
+}
+
+.hero-right {
+  right: 0;
+  top: 0;
+}
+
+
+/* =========================================
+   SOMALI FLAG
+========================================= */
+
+.somali-flag {
+  width: 95px;
+  height: 62px;
+  background: #4189dd;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+
+  position: absolute;
+}
+
+.somali-flag span {
+  color: white;
+  font-size: 42px;
+  line-height: 1;
+}
+
+
+/* LEFT FLAG */
+
+.hero-left .somali-flag {
+  left: 30px;
+  top: 35px;
+}
+
+/* RIGHT FLAG */
+
+.hero-right .somali-flag {
+  right: 30px;
+  top: 35px;
+}
+
+
+/* =========================================
+   AQAL SOOMAALI
+========================================= */
+
+.aqal {
+  position: absolute;
+  width: 110px;
+  height: 100px;
+}
+
+.hero-left .aqal {
+  left: 35px;
+  bottom: 20px;
+}
+
+.hero-right .aqal {
+  right: 35px;
+  bottom: 20px;
+}
+
+
+/* Roof */
+
+.roof {
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 45px solid #f2b705;
+
+  top: 0;
+  left: 0;
+}
+
+
+/* House */
+
+.house {
+  position: absolute;
+  width: 85px;
+  height: 60px;
+
+  background: #fff;
+  border: 5px solid #f2b705;
+
+  left: 12px;
+  top: 40px;
+
+  border-radius: 4px;
+}
+
+
+/* Door */
+
+.door {
+  position: absolute;
+
+  width: 22px;
+  height: 35px;
+
+  background: #064d3b;
+
+  bottom: 0;
+  left: 27px;
+
+  border-radius: 4px 4px 0 0;
+}
+
+
+/* =========================================
+   MAIN MENU
+========================================= */
+
 header {
   text-align: center;
-  padding: 50px 20px 30px;
+  padding: 30px 20px;
 }
 
 header h1 {
   font-size: 42px;
-  text-transform: capitalize;
   margin-bottom: 10px;
 }
 
@@ -41,6 +224,7 @@ header p {
   font-size: 32px;
   margin-bottom: 30px;
   text-transform: uppercase;
+  color: #064d3b;
 }
 
 .food-container {
@@ -53,15 +237,18 @@ header p {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
   transition: 0.3s;
+
   text-align: center;
   padding-bottom: 18px;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
 .card img {
@@ -75,44 +262,154 @@ header p {
   font-size: 18px;
   margin-top: 15px;
   padding: 0 10px;
+  color: #064d3b;
 }
 
 .card p {
   color: #777;
   font-size: 14px;
   margin-top: 8px;
-}
-
-.drink-card {
-  padding-top: 20px;
-}
-
-.drink-icon {
-  font-size: 65px;
-  padding: 20px;
+  padding: 0 10px;
 }
 
 
-/* TABLET */
+/* =========================================
+   FOOTER
+========================================= */
+
+.restaurant-footer {
+  margin-top: 70px;
+
+  background: #064d3b;
+  color: white;
+
+  border-top: 5px solid #e5a900;
+
+  padding: 35px 20px 20px;
+
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-brand {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f2b705;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-info h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.footer-copy {
+  border-top: 1px solid rgba(255,255,255,0.25);
+  margin-top: 25px;
+  padding-top: 18px;
+
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
 @media (max-width: 900px) {
+
   .food-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+========================================= */
+
 @media (max-width: 600px) {
+
   main {
     width: 94%;
   }
-}
-  header h1 {
+
+  .hero {
+    min-height: 260px;
+  }
+
+  .hero-content h1 {
     font-size: 30px;
   }
 
-  .menu-section > h2 {
+  .hero-content p {
+    font-size: 17px;
+  }
+
+  .hero-content span {
+    font-size: 14px;
+  }
+
+  .hero-corner {
+    width: 120px;
+    height: 150px;
+  }
+
+  .somali-flag {
+    width: 55px;
+    height: 37px;
+  }
+
+  .somali-flag span {
     font-size: 25px;
+  }
+
+  .hero-left .somali-flag {
+    left: 8px;
+    top: 15px;
+  }
+
+  .hero-right .somali-flag {
+    right: 8px;
+    top: 15px;
+  }
+
+  .aqal {
+    transform: scale(0.65);
+  }
+
+  .hero-left .aqal {
+    left: -5px;
+    bottom: 0;
+  }
+
+  .hero-right .aqal {
+    right: -5px;
+    bottom: 0;
   }
 
   .food-container {
@@ -127,46 +424,19 @@ header p {
   .card h3 {
     font-size: 15px;
   }
-/* =================================
-   RESTAURANT FOOTER
-================================= */
 
-.restaurant-footer {
-  margin-top: 70px;
-  background: #064d3b;
-  color: white;
-  text-align: center;
-  padding: 45px 20px 25px;
-  border-top: 5px solid #e5a900;
-}
+  .card p {
+    font-size: 12px;
+  }
 
-.footer-content {
-  max-width: 700px;
-  margin: auto;
-}
+  /* MOBILE FOOTER */
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-.restaurant-footer h2 {
-  font-size: 28px;
-  letter-spacing: 2px;
-  margin-bottom: 18px;
-  color: #ffffff;
-}
+  .footer-info {
+    text-align: center;
+  }
 
-.restaurant-footer p {
-  margin: 7px 0;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-}
-
-.footer-line {
-  width: 80px;
-  height: 3px;
-  background: #e5a900;
-  margin: 25px auto 20px;
-  border-radius: 10px;
-}
-
-.footer-brand {
-  font-size: 14px !important;
-  opacity: 0.8;
 }
