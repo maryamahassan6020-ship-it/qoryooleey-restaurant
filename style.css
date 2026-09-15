@@ -128,3 +128,37 @@ header p {
     font-size: 15px;
   }
 }
+.qr-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.qr-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.qr-section p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.qr-section img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.qr-section img:hover {
+  transform: scale(1.03);
+}
+
+.qr-section h3 {
+  margin-top: 20px;
+  font-size: 22px;
+}
